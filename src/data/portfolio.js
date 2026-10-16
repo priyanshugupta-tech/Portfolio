@@ -30,10 +30,10 @@ export const profile = {
   ],
   socialLinks: [
     { label: 'GitHub', href: 'https://github.com/priyanshugupta-tech', icon: FaGithub },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/priyanshugupta-tech/', icon: FaLinkedinIn },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/priyanshugupta-tech', icon: FaLinkedinIn },
     { label: 'X', href: 'https://x.com/dear_developerr/', icon: FaSquareXTwitter },
-    { label: 'YouTube', href: 'https://youtube.com/@priyanshugupta-tech/', icon: FaYoutube},
-    { label: 'Reddit', href: 'https://www.reddit.com/user/Priyanshuyk/', icon: FaReddit},
+    { label: 'YouTube', href: 'https://youtube.com/@priyanshugupta-tech/', icon: FaYoutube },
+    { label: 'Reddit', href: 'https://www.reddit.com/user/Priyanshuyk/', icon: FaReddit },
   ],
 }
 
