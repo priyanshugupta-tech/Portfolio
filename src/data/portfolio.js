@@ -29,7 +29,7 @@ export const profile = {
     { label: 'Contact', href: '#contact' },
   ],
   socialLinks: [
-    { label: 'GitHub', href: 'https://github.com/priyanshupta-tech', icon: FaGithub },
+    { label: 'GitHub', href: 'https://github.com/priyanshugupta-tech', icon: FaGithub },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/priyanshugupta-tech/', icon: FaLinkedinIn },
     { label: 'X', href: 'https://x.com/dear_developerr/', icon: FaSquareXTwitter },
     { label: 'YouTube', href: 'https://youtube.com/@priyanshugupta-tech/', icon: FaYoutube},
