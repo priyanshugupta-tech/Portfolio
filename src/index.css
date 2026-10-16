@@ -1752,12 +1752,9 @@ section[id] {
 }
 
 /* --------------------------------------------------------------------------
-   Mobile Devices: < 700px
+   Mobile & Tablet Devices: <= 1024px
    -------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------
-   Mobile Devices: < 700px
-   -------------------------------------------------------------------------- */
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .carlos-hero {
     height: auto;
     min-height: 100svh;
@@ -1773,10 +1770,20 @@ section[id] {
     padding: 0;
   }
 
-  /* Hide portrait image on smaller screens */
+  /* Hide portrait image on non-desktop screens */
   .carlos-hero-portrait {
     display: none !important;
   }
+}
+
+/* Ensure portrait is visible only to desktop users (hide on touch / mobile / tablet devices) */
+@media (hover: none) and (pointer: coarse) {
+  .carlos-hero-portrait {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
 
   .carlos-hero-grid {
     grid-template-columns: 1fr;

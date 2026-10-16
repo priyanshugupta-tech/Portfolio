@@ -7,17 +7,9 @@ import {
   useTransform,
 } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import { FaLinkedinIn, FaYoutube } from 'react-icons/fa'
-import { FaSquareXTwitter } from 'react-icons/fa6'
 import priyanshuCutout from '../../assets/priyanshuHero.png'
 import { profile } from '../../data/portfolio'
 import { staggerContainer, staggerItem } from '../../lib/animations'
-
-const heroSocials = [
-  { name: 'YouTube', href: 'https://youtube.com/@techyyp/', icon: FaYoutube },
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/techyyp/', icon: FaLinkedinIn },
-  { name: 'X', href: 'https://x.com/techyyp/', icon: FaSquareXTwitter },
-]
 
 export default function Hero() {
   const sectionRef = useRef(null)
@@ -59,14 +51,18 @@ export default function Hero() {
             </h1>
             <div className="carlos-name-bar" aria-hidden="true" />
             <div className="carlos-social-row">
-              {heroSocials.map((social) => {
-                const Icon = social.icon
-                return (
-                  <a key={social.name} href={social.href} target="_blank" rel="noreferrer" className="carlos-social-link" aria-label={`Visit ${social.name}`}>
-                    <Icon size={17} />
-                  </a>
-                )
-              })}
+              {profile.socialLinks.map(({ label, href, icon: Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="carlos-social-link"
+                  aria-label={`Visit ${label}`}
+                >
+                  <Icon size={17} />
+                </a>
+              ))}
             </div>
           </motion.div>
 
