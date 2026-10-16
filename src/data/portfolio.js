@@ -29,10 +29,10 @@ export const profile = {
     { label: 'Contact', href: '#contact' },
   ],
   socialLinks: [
-    { label: 'GitHub', href: 'https://github.com/techyyp', icon: FaGithub },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/techyyp/', icon: FaLinkedinIn },
-    { label: 'X', href: 'https://x.com/techyyp/', icon: FaSquareXTwitter },
-    { label: 'YouTube', href: 'https://youtube.com/@techyyp/', icon: FaYoutube},
+    { label: 'GitHub', href: 'https://github.com/priyanshupta-tech', icon: FaGithub },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/priyanshugupta-tech/', icon: FaLinkedinIn },
+    { label: 'X', href: 'https://x.com/priyanshugupta-tech/', icon: FaSquareXTwitter },
+    { label: 'YouTube', href: 'https://youtube.com/@priyanshugupta-tech/', icon: FaYoutube},
     { label: 'Reddit', href: 'https://www.reddit.com/user/Priyanshuyk/', icon: FaReddit},
   ],
 }
